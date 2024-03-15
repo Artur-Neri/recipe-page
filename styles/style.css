@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=PT+Sans:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Young+Serif&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 123px 0;
+  background-color: #F3E5D7;
+  font-family: "Outfit", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Young Serif", serif;
+}
+
+.accent {
+  color: #5F564D;
+  font-weight: 700;
+}
+
+.recipe-text {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.container {
+  background-color: #ffffff;
+  max-width: 736px;
+  padding: 40px;
+  border-radius: 24px;
+}
+.container .title {
+  font-size: 40px;
+  color: #312E2C;
+  margin-bottom: 24px;
+}
+.container .recipe-text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #5F564D;
+}
+.container .recipe-preparation {
+  background-color: rgba(122, 40, 78, 0.1019607843);
+  padding: 21px;
+  margin: 32px 0;
+  border-radius: 12px;
+}
+.container .recipe-preparation--title {
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  color: #7A284E;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.container .recipe-preparation li {
+  display: flex;
+  align-items: center;
+}
+.container .recipe-preparation li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #7A284E;
+  margin-right: 28px;
+}
+.container .ingredients {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #E3DDD7;
+}
+.container .instructions {
+  margin-bottom: 32px;
+}
+.container .section-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #854632;
+  margin-bottom: 24px;
+}
+.container .section ul li {
+  display: flex;
+  align-items: center;
+}
+.container .section ul li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #7A284E;
+  margin-right: 28px;
+}
+.container .section ol li::before {
+  color: #7A284E;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.container .section ol li:nth-child(1)::before {
+  content: "1.";
+}
+.container .section ol li:nth-child(2)::before {
+  content: "2.";
+}
+.container .section ol li:nth-child(3)::before {
+  content: "3.";
+}
+.container .section ol li:nth-child(4)::before {
+  content: "4.";
+}
+.container .section ol li:nth-child(5)::before {
+  content: "5.";
+}
+.container .section ol li:nth-child(6)::before {
+  content: "6.";
+}
+.container .nutrition {
+  margin-top: 24px;
+}
+.container .nutrition-items-item {
+  display: flex;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=style.css.map */
