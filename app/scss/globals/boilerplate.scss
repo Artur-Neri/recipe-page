@@ -34,8 +34,14 @@ h1,h2 {
   margin-bottom: rem(24);
 }
 
+h1 {
+  font-weight: 400;
+}
+
 h2 {
   color: var(--accent);
+  font-size: rem(28);
+  font-weight: 400;
 }
 
 ol > li::marker {
