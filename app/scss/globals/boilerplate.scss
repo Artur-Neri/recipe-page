@@ -48,12 +48,19 @@ ol > li::marker {
   font-weight: bold;
 }
 
+ul, ol {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+}
+
 li {
   padding-left: rem(16);
   
   span {
     font-weight: 700;
 }
+
 }
 
 li::marker {
