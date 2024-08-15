@@ -11,19 +11,17 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
-
-- Nutmeg: hsl(14, 45%, 36%)
-- Dark Raspberry: hsl(332, 51%, 32%)
-
-### Neutral
-
 - White: hsl(0, 0%, 100%)
-- Rose White: hsl(330, 100%, 98%)
-- Eggshell: hsl(30, 54%, 90%)
-- Light Grey: hsl(30, 18%, 87%)
-- Wenge Brown: hsl(30, 10%, 34%)
-- Dark Charcoal: hsl(24, 5%, 18%)
+
+- Stone 100: hsl(30, 54%, 90%)
+- Stone 150: hsl(30, 18%, 87%)
+- Stone 600: hsl(30, 10%, 34%)
+- Stone 900: hsl(24, 5%, 18%)
+
+- Brown 800: hsl(14, 45%, 36%)
+
+- Rose 800: hsl(332, 51%, 32%)
+- Rose 50: hsl(330, 100%, 98%)
 
 ## Typography
 
@@ -39,4 +37,4 @@ The designs were created to the following widths:
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Weights: 400, 600, 700
 
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster.

@@ -5,130 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Recipe page</title>
-
+  <link rel="stylesheet" href="/dist/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    .attribution {position: absolute; bottom: 0px;left: 50%;transform: translate(-50%);}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <main class="container">
-
-    <div class="main-image">
-      <img src="./assets/images/image-omelette.jpeg" alt="omelette on a plate">
-    </div>
-
-    <h1 class="title">Simple Omelette Recipe</h1>
-
-    <p class="recipe-text">
-      An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+  <header class="wrapper">
+    <img src="/assets/images/image-omelette.jpeg" alt="omelette picture">
+  </header>
+  <main class="recipe wrapper">
+    <h1 class="recipe__title">
+      Simple Omelette Recipe
+    </h1>
+    <p class="recipe__description">
+      An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.
     </p>
-    <section class="recipe-preparation">
-      <h3 class="recipe-preparation--title">Preparation time</h3>
+
+    <section class="preparation">
+      <h3 class="preparation__title">Preparation time</h3>
       <ul>
-        <li class="recipe-text"><span class="accent">Total</span>: Approximately 10 minutes</li>
-        <li class="recipe-text"><span class="accent">Preparation</span>: 5 minutes</li>
-        <li class="recipe-text"><span class="accent">Cooking</span>: 5 minutes</li>
-      </ul>
-    </section>
-    
-  
-    <section class="section ingredients">
-      <h2 class="section-title">Ingredients</h2>
-    
-      <ul>
-        <li class="recipe-text">2-3 large eggs</li>
-        <li class="recipe-text">Salt, to taste</li>
-        <li class="recipe-text">Pepper, to taste</li>
-        <li class="recipe-text">1 tablespoon of butter or oil</li>
-        <li class="recipe-text">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        <li class="preparation__item"><span>Total:</span> Approximately 10 minutes</li>
+        <li class="preparation__item"><span>Preparation:</span> 5 minutes</li>
+        <li class="preparation__item"><span>Cooking:</span> 5 minutes</li>
       </ul>
     </section>
 
-    <section class="section instructions">
-      <h2 class="section-title">Instructions</h2>
+    <section class="ingredients">
+      <h2 class="ingredients__title">Ingredients</h2>
+      <ul>
+        <li class="ingredients__item">2-3 large eggs</li>
+        <li class="ingredients__item">Salt, to taste</li>
+        <li class="ingredients__item"> Pepper, to taste</li>
+        <li class="ingredients__item">1 tablespoon of butter or oil</li>
+        <li class="ingredients__item">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </section>
 
+    <div class="separator"></div>
+
+    <section class="instructions">
+      <h2 class="instructions__title">Instructions</h2>
       <ol>
-        <li class="recipe-text">
-          <span class="accent">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
-          You can add a tablespoon of water or milk for a fluffier texture.
-        </li>
-        <li class="recipe-text"><span class="accent">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li class="recipe-text">
-          <span class="accent">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
-          the eggs evenly coat the surface.
-        </li>
-        <li class="recipe-text">
-          <span class="accent">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the
-          middle, sprinkle your chosen fillings over one half of the omelette.
-        </li>
-        <li class="recipe-text">
-          <span class="accent">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the
-          fillings. Let it cook for another minute, then slide it onto a plate.
-        </li>
-        <li class="recipe-text"><span class="accent">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+        <li class="instructions__item"><span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+    You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li class="instructions__item"><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li class="instructions__item"><span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+    the eggs evenly coat the surface.</li>
+        <li class="instructions__item"><span>Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+    middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li class="instructions__item"><span>Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+    fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li class="instructions__item"><span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
       </ol>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="nutrition">
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <div class="nutrition__property">
+        <span>Calories</span>
+        <span>277kcal</span>
+      </div>
+
+      <div class="separator"></div>
+      
+      <div class="nutrition__property">
+        <span>Carbs</span>
+        <span>0g</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="nutrition__property">
+        <span>Protein</span>
+        <span>20g</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="nutrition__property">
+        <span>Fat</span>
+        <span>22g</span>
+      </div>
 
     </section>
-    
-    <section class="section">
-      <h2 class="section-title">Nutrition</h2>
-    </section>
-    
-  
-    
-  
-    <p class="recipe-text">The table below shows nutritional values per serving without the additional fillings.</p>
-    
-    <div class="nutrition">
-      <ul class="nutrition-items">
-        
-        <li class="nutrition-items-item">
-          <span>Calories</span>
-          <span class="nutrition-number">277kcal</span>
-        </li>
-
-        <li class="nutrition-items-item">
-          <span>Carbs</span>
-          <span class="nutrition-number">0g</span>
-        </li>
-
-        <li class="nutrition-items-item">
-          <span>Protein</span>
-          <span class="nutrition-number">20g</span>
-        </li>
-
-        <li class="nutrition-items-item">
-          <span>Fat</span>
-          <span class="nutrition-number">22g</span>
-        </li>
-        
-      </ul>
-    </div>
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-
 
   </main>
+
   
-  
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="https://www.frontendmentor.io/profile/Artur-Neri">Artur Neri</a>.
+  </div>
 </body>
 </html>

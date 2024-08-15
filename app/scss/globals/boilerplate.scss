@@ -1,0 +1,116 @@
+@use '../util' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin-top: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--outfit);
+  font-size: rem(16);
+  line-height: 1.5;
+  color: var(--text1);
+  background-color: var(--bg);
+  @include breakpoint(medium) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: rem(128) 0;
+  }
+}
+
+h1,h2 {
+  font-family: var(--young-serif);
+  margin-bottom: rem(24);
+}
+
+h2 {
+  color: var(--accent);
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+li {
+  padding-left: rem(16);
+  
+  span {
+    font-weight: 700;
+}
+}
+
+li::marker {
+  color: var(--accent);
+}
+
+.preparation li::marker {
+  color: var(--prep-title);
+}
+
+.wrapper {
+  max-width: rem(736);
+  width: calc(100vw - 76px);
+  margin-inline: auto;
+
+  @include breakpoint-down(medium){
+    width: 100vw;
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--separator);
+  margin: rem(32) 0;
+}
+
+.recipe {
+  background-color: var(--container-bg);
+  padding: rem(40) rem(32);
+  @include breakpoint(medium) {
+    padding: rem(40);
+    border-radius:0 0 rem(24) rem(24);
+  }
+
+  &__title {
+    color: var(--recipe-title);
+  }
+
+  &__description {
+    margin-bottom: rem(32);
+  }
+}
+
+.nutrition {
+  p {
+    margin-bottom: rem(24);
+  }
+
+  .separator {
+    margin: rem(12) 0;
+  }
+
+  &__property {
+    display: flex;
+
+    span {
+      flex: 1;
+      text-align: left;
+    }
+    span:nth-child(2){
+      color: var(--accent);
+      font-weight: 700;
+    }
+  }
+}

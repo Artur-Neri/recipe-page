@@ -1,0 +1,14 @@
+@use '../util' as *;
+
+.preparation {
+    border-radius: rem(12);
+    padding: rem(24);
+    margin-bottom: rem(32);
+    background-color: var(--prep-bg);
+    
+    &__title {
+        color: var(--prep-title);
+    }
+
+
+}

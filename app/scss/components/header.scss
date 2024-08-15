@@ -1,0 +1,18 @@
+@use '../util' as *;
+
+header{
+    width: 100%;
+    background-color: var(--container-bg);
+    @include breakpoint(medium) {
+        padding: rem(40) rem(40) 0 rem(40);
+        border-radius: rem(24) rem(24) 0 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        @include breakpoint(medium) {
+            border-radius: rem(12);
+        }
+    }
+}
